@@ -1,0 +1,10 @@
+fastapi==0.139.0
+uvicorn==0.50.0
+SQLAlchemy==2.0.51
+PyJWT==2.13.0
+pillow==12.2.0
+requests==2.31.0
+pywebview==6.2.1
+pythonnet==3.1.0
+pywin32==311
+yt-dlp==2026.3.17
