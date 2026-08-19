@@ -1,21 +1,30 @@
-# Projyn — Playout & YouTube Library System
-
 <div align="center">
 
-![Projyn Banner](https://img.shields.io/badge/PROJYN-Playout%20%26%20YouTube%20Library-0ea5e9?style=for-the-badge&logo=youtube&logoColor=white)
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="frontend/public/logo-projyn-clara.png">
+    <source media="(prefers-color-scheme: light)" srcset="frontend/public/logo-projyn-escura.png">
+    <img alt="Projyn Playout Logo" src="frontend/public/logo-projyn-clara.png" width="360">
+  </picture>
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.0%2B-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![SQLite](https://img.shields.io/badge/SQLite-SQLAlchemy-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
-[![yt-dlp](https://img.shields.io/badge/yt--dlp-Direct%20Streaming-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://github.com/yt-dlp/yt-dlp)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+  <p align="center">
+    <strong>Sistema Profissional de Playout & Biblioteca YouTube para Igrejas, Eventos e Transmissões</strong>
+  </p>
 
-**Sistema profissional de Playout para igrejas, eventos e transmissões.**  
-Organize bibliotecas de vídeos do YouTube por categorias, reproduza transmissões diretas sem anúncios em Full HD/4K e controle o telão/projetor remotamente de qualquer dispositivo.
+  [![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+  [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Vite](https://img.shields.io/badge/Vite-6.0%2B-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+  [![SQLite](https://img.shields.io/badge/SQLite-SQLAlchemy-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
+  [![yt-dlp](https://img.shields.io/badge/yt--dlp-Direct%20Streaming-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://github.com/yt-dlp/yt-dlp)
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
-[Recursos](#-recursos-principais) • [Arquitetura](#-arquitetura) • [Como Rodar](#-como-rodar-o-projeto) • [Controle de Acesso](#-permissões-e-segurança) • [Produção & Deploy](#-deploy--produção)
+  <br>
+
+  Organize bibliotecas de vídeos do YouTube por categorias, reproduza transmissões diretas sem anúncios em Full HD/4K e controle o telão/projetor remotamente de qualquer dispositivo.
+
+  <br><br>
+
+  [Recursos](#-recursos-principais) • [Arquitetura](#-arquitetura) • [Como Rodar](#-como-rodar-o-projeto) • [Controle de Acesso](#-permissões-e-segurança) • [Produção & Deploy](#-deploy--produção)
 
 </div>
 
@@ -90,20 +99,21 @@ Projyn/
 
 ## 🚀 Como Rodar o Projeto
 
-### 📦 Pré-requisitos
-1. **Python 3.10+** (com `pip` e `venv`)
-2. **Node.js 18+** e **npm**
-3. **yt-dlp** instalado no sistema:
-   ```powershell
-   # Windows (via winget ou pip)
-   pip install yt-dlp
-   # ou
-   winget install yt-dlp
-   ```
+### ⚡ Inicialização Rápida em 1 Clique (Automática)
+Basta executar o script [iniciar.bat] dando 2 cliques ou pelo CMD:
+- **Modo Administrador**: Necessário apenas no primeiro uso se você **não** tiver Python 3.10+ ou Node.js 18+ instalados (ele baixa e configura tudo automaticamente via Winget).
+- **Execução Normal**: Se os programas e dependências já estiverem instalados, ele apenas inicia o servidor e abre o navegador em `http://localhost:8797`.
 
 ---
 
-### 💻 Modo Produção (Recomendado)
+### 📦 Pré-requisitos Manuais (Opcional)
+1. **Python 3.10+** (com `pip` e `venv`)
+2. **Node.js 18+** e **npm**
+3. **yt-dlp** (já incluso nas dependências do Python)
+
+---
+
+### 💻 Modo Produção Manual (Recomendado)
 
 No modo de produção, o FastAPI serve tanto a API quanto a interface React compilada (`frontend/dist`) em uma única porta unificada:
 
