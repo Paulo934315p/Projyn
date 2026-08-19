@@ -1,4 +1,4 @@
-# 📽️ Projyn — Playout & YouTube Library System
+# Projyn — Playout & YouTube Library System
 
 <div align="center">
 
