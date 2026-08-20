@@ -7,7 +7,7 @@
   </picture>
 
 <p align="center">
-    <strong>[Recursos](HTTPS://projyn.kodria.com.br)</strong>
+    <strong>(https://projyn.kodria.com.br)</strong>
   </p>
 
   <p align="center">
