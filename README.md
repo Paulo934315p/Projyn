@@ -6,6 +6,10 @@
     <img alt="Projyn Playout Logo" src="frontend/public/logo-projyn-clara.png" width="360">
   </picture>
 
+<p align="center">
+    <strong>[Recursos](HTTPS://projyn.kodria.com.br)</strong>
+  </p>
+
   <p align="center">
     <strong>Sistema Profissional de Playout & Biblioteca YouTube para Igrejas, Eventos e Transmissões</strong>
   </p>
